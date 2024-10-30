@@ -2,13 +2,20 @@
  * @copyright 2024 City of Bloomington, Indiana
  * @license http://www.gnu.org/licenses/agpl.txt GNU/AGPL, see LICENSE
  #}
-<ul class="dropdown-menu">
-    <li>
-        <a class="dropdown-item fs-5 fw-bold" href="{{ base_path }}business">Business</a>
-        <ul>
-            <li><a class="dropdown-item" href="{{ base_path }}sustainability">Susatainable Bloomington</a></li>
-            <li><a class="dropdown-item" href="{{ base_path }}rfp">RFP &amp; Bid Information</a></li>
-            <li><a class="dropdown-item" href="https://bloomington.ecdev.org/">Business in Bloomington</a></li>
-        </ul>
-    </li>
-</ul>
+<div id="offcanvas_business" class="offcanvas offcanvas-top" tabindex="-1" aria-label="Business">
+    <header class="offcanvas-header">
+        <h4 class="offcanvas-title">Business</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </header>
+
+    <ul class="offcanvas-body">
+        <li>
+            <a class="dropdown-item fs-5 fw-bold" href="{{ base_path }}business">Business</a>
+            <ul>
+                <li><a class="dropdown-item" href="{{ base_path }}sustainability">Susatainable Bloomington</a></li>
+                <li><a class="dropdown-item" href="{{ base_path }}rfp">RFP &amp; Bid Information</a></li>
+                <li><a class="dropdown-item" href="https://bloomington.ecdev.org/">Business in Bloomington</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>

@@ -1,47 +1,4 @@
 "use strict";
-const debounce = (f, d) => {
-    let timer = null;
-
-    return (...args) => {
-        clearTimeout(timer);
-        timer = setTimeout(() => {
-            f(...args);
-        }, d);
-    }
-};
-
-const hover_menus = {
-    services_link: 'services-dropdown',
-    info_link:     'info-dropdown',
-    news_link:     'news-dropdown',
-    meetings_link: 'meetings-dropdown',
-    city_link:     'city-dropdown'};
-
-
-function toggleMenu(id) {
-    const e = document.getElementById(id);
-    if (e.classList.contains('visually-hidden')) {
-        for (const k in hover_menus) {
-            document.getElementById(hover_menus[k]).classList.add('visually-hidden');
-        }
-        e.classList.remove('visually-hidden');
-    }
-    else {
-        e.classList.add('visually-hidden');
-    }
-}
-
-for (const k in hover_menus) {
-    const link = document.getElementById(k);
-    link.addEventListener('click', (e)=>{
-        e.preventDefault();
-        toggleMenu(hover_menus[e.target.getAttribute('id')]);
-    });
-    // link.addEventListener('mouseover', debounce((e)=>{
-    //     toggleMenu(hover_menus[e.target.getAttribute('id')]);
-    // }, 200));
-}
-
 (function() {
 
 

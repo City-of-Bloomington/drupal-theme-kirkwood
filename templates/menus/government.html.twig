@@ -2,15 +2,22 @@
  * @copyright 2024 City of Bloomington, Indiana
  * @license http://www.gnu.org/licenses/agpl.txt GNU/AGPL, see LICENSE
  #}
-<ul class="dropdown-menu">
-    <li>
-        <a class="dropdown-item fs-5 fw-bold" href="{{ base_path }}city">Government</a>
-        <ul>
-            <li><a class="dropdown-item" href="{{ base_path }}mayor">Mayor Kerry Thomson</a></li>
-            <li><a class="dropdown-item" href="{{ base_path }}council">City Council</a></li>
-            <li><a class="dropdown-item" href="{{ base_path }}clerk">City Clerk</a></li>
-            <li><a class="dropdown-item" href="{{ base_path }}boards">Boards &amp; Commissions</a></li>
-            <li><a class="dropdown-item" href="{{ base_path }}departments">Departments</a></li>
-        </ul>
-    </li>
-</ul>
+<div id="offcanvas_government" class="offcanvas offcanvas-top" tabindex="-1" aria-label="Government">
+    <header class="offcanvas-header">
+        <h4 class="offcanvas-title">Government</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </header>
+
+    <ul class="offcanvas-body">
+        <li>
+            <a class="dropdown-item fs-5 fw-bold" href="{{ base_path }}city">Government</a>
+            <ul>
+                <li><a class="dropdown-item" href="{{ base_path }}mayor">Mayor Kerry Thomson</a></li>
+                <li><a class="dropdown-item" href="{{ base_path }}council">City Council</a></li>
+                <li><a class="dropdown-item" href="{{ base_path }}clerk">City Clerk</a></li>
+                <li><a class="dropdown-item" href="{{ base_path }}boards">Boards &amp; Commissions</a></li>
+                <li><a class="dropdown-item" href="{{ base_path }}departments">Departments</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>

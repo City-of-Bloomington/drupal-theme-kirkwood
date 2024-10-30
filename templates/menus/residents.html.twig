@@ -2,48 +2,50 @@
  * @copyright 2024 City of Bloomington, Indiana
  * @license http://www.gnu.org/licenses/agpl.txt GNU/AGPL, see LICENSE
  #}
-<ul class="dropdown-menu">
-    <li>
-        <a class="dropdown-item fs-5 fw-bold" href="{{ base_path }}welcome">Residents</a>
-        <ul><li><a class="dropdown-item" href="{{ base_path }}welcome/students">Student Living</a></li>
-            <li><a class="dropdown-item" href="{{ base_path }}housing/renters/housing/yard-complaints">Trash &amp; Yard Violations</a>
-            <li><a class="dropdown-item" href="{{ base_path }}police/noise">Noise Complaints</a></li>
-            <li><a class="dropdown-item" href="{{ base_path }}sites/default/files/2024-04/Donate%20your%20household%20items%202024.pdf">Moving out? Donate your stuff!</a></li>
+<div id="offcanvas_residents" class="offcanvas offcanvas-top" tabindex="-1" aria-label="Residents">
+    <header class="offcanvas-header">
+        <h4 class="offcanvas-title">Residents</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </header>
 
+    <ul class="offcanvas-body">
+    <li>
+        <a class="fs-5 fw-bold" href="{{ base_path }}welcome">Residents</a>
+        <ul><li><a href="{{ base_path }}welcome/students">Student Living</a></li>
+            <li><a href="{{ base_path }}housing/renters/housing/yard-complaints">Trash &amp; Yard Violations</a>
+            <li><a href="{{ base_path }}police/noise">Noise Complaints</a></li>
+            <li><a href="{{ base_path }}sites/default/files/2024-04/Donate%20your%20household%20items%202024.pdf">Moving out? Donate your stuff!</a></li>
         </ul>
     </li>
     <li>
-        <a class="dropdown-item fs-5 fw-bold" href="{{ base_path }}housing/renters">Renters</a>
-        <ul>
-            <li><a class="dropdown-item" href="{{ base_path }}sites/default/files/2022-01/FINAL%20Tenant%20Info%20brochure%2C%2010-1-2021.pdf">Renters Brochure</a></li>
-            <li><a class="dropdown-item" href="{{ base_path }}housing/renters/legal-questions">Legal Questions</a></li>
-            <li><a class="dropdown-item" href="{{ base_path }}housing/rental-complaints">Rental Complaints</a></li>
-            <li><a class="dropdown-item" href="{{ base_path }}sites/default/files/2024-10/ILS%20-%20Renter%20Rights%20and%20Responsibilities.pdf">Rights &amp; Responsibilities</a></li>
-            <li><a class="dropdown-item" href="{{ base_path }}sites/default/files/2024-10/Free_Reduced%20Legal%20Resources%20Monroe%20Co%209.8.2023.pdf">Reduced Fee Legal Resources</a></li>
-            <li><a class="dropdown-item" href="{{ base_path }}sites/default/files/2024-10/UPDATED%20Eviction%20Prevention%20Guide%20Brochure.pdf">Eviction Prevention</a></li>
+        <a class="fs-5 fw-bold" href="{{ base_path }}housing/renters">Renters</a>
+        <ul><li><a href="{{ base_path }}sites/default/files/2022-01/FINAL%20Tenant%20Info%20brochure%2C%2010-1-2021.pdf">Renters Brochure</a></li>
+            <li><a href="{{ base_path }}housing/renters/legal-questions">Legal Questions</a></li>
+            <li><a href="{{ base_path }}housing/rental-complaints">Rental Complaints</a></li>
+            <li><a href="{{ base_path }}sites/default/files/2024-10/ILS%20-%20Renter%20Rights%20and%20Responsibilities.pdf">Rights &amp; Responsibilities</a></li>
+            <li><a href="{{ base_path }}sites/default/files/2024-10/Free_Reduced%20Legal%20Resources%20Monroe%20Co%209.8.2023.pdf">Reduced Fee Legal Resources</a></li>
+            <li><a href="{{ base_path }}sites/default/files/2024-10/UPDATED%20Eviction%20Prevention%20Guide%20Brochure.pdf">Eviction Prevention</a></li>
         </ul>
     </li>
     <li>
-        <a class="dropdown-item fs-5 fw-bold" href="{{ base_path }}housing/home-ownership">Homeowners</a>
-        <ul>
-            <li><a class="dropdown-item" href="{{ base_path }}housing/home-buyers-club">Home Buyers Club</a></li>
+        <a class="fs-5 fw-bold" href="{{ base_path }}housing/home-ownership">Homeowners</a>
+        <ul><li><a href="{{ base_path }}housing/home-buyers-club">Home Buyers Club</a></li>
         </ul>
     </li>
     <li>
-        <a class="dropdown-item fs-5 fw-bold" href="{{ base_path }}">Utilities</a>
-        <ul>
-            <li><a class="dropdown-item" href="{{ base_path }}sanitation/trash">Sanitation Services</a></li>
-            <li><a class="dropdown-item" href="{{ base_path }}utilities/pay-bill">Pay Utility Bill</a></li>
+        <a class="fs-5 fw-bold" href="{{ base_path }}">Utilities</a>
+        <ul><li><a href="{{ base_path }}sanitation/trash">Sanitation Services</a></li>
+            <li><a href="{{ base_path }}utilities/pay-bill">Pay Utility Bill</a></li>
         </ul>
     </li>
     <li>
-        <a class="dropdown-item fs-5 fw-bold" href="{{ base_path }}transportation">Getting Around</a>
-        <ul>
-            <li><a class="dropdown-item" href="{{ base_path }}transportation/parking">Parking Services</a></li>
-            <li><a class="dropdown-item" href="{{ base_path }}transportation/parking/towing">Vehicle Towing</a></li>
-            <li><a class="dropdown-item" href="{{ base_path }}transportation/bike/registration">Bike &amp; Scooter Registration</a></li>
+        <a class="fs-5 fw-bold" href="{{ base_path }}transportation">Getting Around</a>
+        <ul><li><a href="{{ base_path }}transportation/parking">Parking Services</a></li>
+            <li><a href="{{ base_path }}transportation/parking/towing">Vehicle Towing</a></li>
+            <li><a href="{{ base_path }}transportation/bike/registration">Bike &amp; Scooter Registration</a></li>
         </ul>
     </li>
-</ul>
+    </ul>
+</div>
 
 
