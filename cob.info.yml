@@ -4,8 +4,23 @@ type: 'theme'
 description: 'City of Bloomington Theme'
 package: 'COB'
 core_version_requirement: '^9||^10'
-base theme: false
+base theme: 'uswds'
 libraries:
-  - 'cob/fn1'
   - 'cob/cob'
+
+regions:
+  header_top: 'Above Header'
+  header: 'Header'
+  primary_menu: 'Primary Menu'
+  secondary_menu: 'Secondary Menu'
+  sidebar_first: 'First sidebar'
+  sidebar_second: 'Second sidebar'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  hero: 'Hero'
+  content: 'Content'
+  footer_menu: 'Footer Menu'
+  footer: 'Primary Footer'
+  footer_secondary: 'Secondary Footer'
 ...

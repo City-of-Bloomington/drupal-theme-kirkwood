@@ -47,71 +47,21 @@
 #}
 
 {{ page.highlighted }}
-
-
-{% if alerts %}
-	<div id="alerts">{{ alerts }}</div>
-{% endif %}
-
-<header id="homepage">
-	<div class="menu-container">
-		<a href="{{ base_path }}" title="City of Bloomington" class="logo">
-			<img src="{{ base_path }}{{ directory }}/css/images/cob-logo-horizontal.svg" alt="City of Bloomington">
-		</a>
-		<a href="{{ base_path }}" title="City of Bloomington, Indiana" class="name">Mayor Kerry Thomson</a>
-
-		<nav id="navigation" role="navigation" aria-labelledby="navigation">
-			<ul>
-				<li>
-					<a href="{{ base_path }}ureport/miscellaneous/53" title="Feedback" target="_blank">Feedback</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
-	<nav id="header-icon-nav">
-		<div class="container">
-			<a class="services" title="Top Services" href="{{ base_path }}services">
-				<span>Services</span>
-				<span>Services</span>
-			</a>
-
-			<a class="info" title="Information &amp; Guides" href="{{ base_path }}about">
-				<span>Information</span>
-				<span>Info</span>
-			</a>
-
-			<a class="news" title="News &amp; Events" href="{{ base_path }}news">
-				<span>News</span>
-				<span>News</span>
-			</a>
-
-			<a class="meetings" title="News &amp; Events" href="{{ base_path }}calendars">
-				<span>Meetings &amp; Events</span>
-				<span>Events</span>
-			</a>
-
-			<a class="city" title="City Government" href="{{ base_path }}city">
-				<span>City Government</span>
-				<span>Govt.</span>
-			</a>
-		</div>
-	</nav>
-</header>
-{{ page.primary_menu }}
-
+{% include '@cob/partials/gov-banner.html.twig' %}
+{% include '@cob/partials/siteHeader.html.twig' %}
 <main class="front">
 	<a id="main-content" tabindex="-1"></a>
 	{# link is in html.html.twig #}
 
 	<section id="block-searchform" role="search">
 		<div class="container">
-			<form id="search-block-form" method="get" action="{{ base_path }}search">
+			{# <form id="search-block-form" method="get" action="{{ base_path }}search">
 				<fieldset>
 					<label for="query" class="visually-hidden">Search</label>
 					<input id="query" name="query" type="search" class="form-search" title="Enter the terms you wish to search for." placeholder="Search the City of Bloomington" size="15" maxlength="128"/>
 					<input type="submit" class="button" value="Search"/>
 				</fieldset>
-			</form>
+			</form> #}
 		</div>
 	</section>
 	{# <div id="banner"></div>#}
@@ -119,11 +69,11 @@
 
 	{{ page.help }}
 
-	<div class="promoted-area">
+	{# <div class="promoted-area">
 		<div class="container">
 			{{ page.content }}
 		</div>
-	</div>
+	</div> #}
 
 	<div id="content">
 		<section id="services-section">

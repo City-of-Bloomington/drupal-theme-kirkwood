@@ -2,58 +2,165 @@
 	<div id="alerts">{{ alerts }}</div>
 {% endif %}
 
-<header>
-	<div class="menu-container">
-		<a href="{{ base_path }}" title="City of Bloomington" class="logo">
-			<img src="{{ base_path }}{{ directory }}/css/images/cob-logo-horizontal.svg" alt="City of Bloomington">
-		</a>
-		<a href="{{ base_path }}" title="City of Bloomington, Indiana" class="name">Mayor Kerry Thomson</a>
+<div class="usa-overlay"></div>
 
-		<div class="nav-items non-home">
-			<form id="header-search" method="get" action="{{ base_path }}search">
-				<fieldset>
-					<label for="query" class="visually-hidden">Search</label>
-					<input id="query" name="query" type="search" class="form-search" title="Enter the terms you wish to search for." placeholder="Search the City of Bloomington" size="15" maxlength="128"/>
-					<input type="submit" class="button" value="Search"/>
-				</fieldset>
-			</form>
-
-			{# <nav id="navigation" role="navigation" aria-labelledby="navigation">
-                <ul><li><a href="{{ base_path }}ureport/miscellaneous/53" title="Feedback">Feedback</a></li></ul>
-               </nav> #}
-		</div>
-	</div>
-
-	<nav id="header-icon-nav">
-		<div class="container">
-			<a class="services" title="Top Services" href="{{ base_path }}services">
-				<span>Services</span>
-				<span>Services</span>
-			</a>
-
-			<a class="info" title="Information &amp; Guides" href="{{ base_path }}about">
-				<span>Information</span>
-				<span>Info</span>
-			</a>
-
-			<a class="news" title="News &amp; Events" href="{{ base_path }}news">
-				<span>News</span>
-				<span>News</span>
-			</a>
-
-			<a class="meetings" title="News &amp; Events" href="{{ base_path }}calendars">
-
-
-				<span>Meetings &amp; Events</span>
-				<span>Events</span>
-			</a>
-
-
-			<a class="city" title="City Government" href="{{ base_path }}city">
-				<span>City Government</span>
-				<span>Govt.</span>
-			</a>
-		</div>
-	</nav>
+<header class="usa-header usa-header--basic usa-header--megamenu">
+    <div class="usa-nav-container">
+        <div class="usa-navbar">
+            <div class="usa-logo">
+                <em class="usa-logo__text">
+                    <a href="{{ base_path }}" title="City of Bloomington, Indiana>">
+                        City of Bloomington
+                    </a>
+                </em>
+            </div>
+            <button type="button" class="usa-menu-btn">Menu</button>
+        </div>
+        <nav aria-label="Primary navigation" class="usa-nav">
+            <button type="button" class="usa-nav__close">
+                <img src="https://bloomington.in.gov/static/uswds/dist/img/usa-icons/close.svg" role="img" alt="Close" />
+            </button>
+            <ul class="usa-nav__primary usa-accordion">
+                 <li class="usa-nav__primary-item">
+                    <button type="button" class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="basic-mega-nav-section-one">
+                        <span>&lt;Current section&gt;</span>
+                    </button>
+                    <div id="basic-mega-nav-section-one" class="usa-nav__submenu usa-megamenu">
+                        <div class="grid-row grid-gap-4">
+                            <div class="usa-col">
+                                <ul class="usa-nav__submenu-list">
+                                    <li class="usa-nav__submenu-item">
+                                        <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                    </li>
+                                    <li class="usa-nav__submenu-item">
+                                        <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                    </li>
+                                    <li class="usa-nav__submenu-item">
+                                        <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="usa-col">
+                                <ul class="usa-nav__submenu-list">
+                                    <li class="usa-nav__submenu-item">
+                                        <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                    </li>
+                                    <li class="usa-nav__submenu-item">
+                                        <a href="javascript:void(0);">&lt;A very long navigation link that goes onto twolines&gt;</a>
+                                    </li>
+                                    <li class="usa-nav__submenu-item">
+                                        <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="usa-col">
+                                <ul class="usa-nav__submenu-list">
+                                    <li class="usa-nav__submenu-item">
+                                        <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                    </li>
+                                    <li class="usa-nav__submenu-item">
+                                        <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                    </li>
+                                    <li class="usa-nav__submenu-item">
+                                        <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="usa-col">
+                                <ul class="usa-nav__submenu-list">
+                                    <li class="usa-nav__submenu-item">
+                                        <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                    </li>
+                                    <li class="usa-nav__submenu-item">
+                                        <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                    </li>
+                                    <li class="usa-nav__submenu-item">
+                                        <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                 <li class="usa-nav__primary-item">
+                    <button type="button" class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="basic-mega-nav-section-two">
+                        <span>&lt;Section&gt;</span>
+                    </button>
+                    <div id="basic-mega-nav-section-two" class="usa-nav__submenu usa-megamenu">
+                        <div class="grid-row grid-gap-4">
+                            <div class="usa-col">
+                                <ul class="usa-nav__submenu-list">
+                                <li class="usa-nav__submenu-item">
+                                    <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                </li>
+                                </ul>
+                            </div>
+                            <div class="usa-col">
+                                <ul class="usa-nav__submenu-list">
+                                <li class="usa-nav__submenu-item">
+                                    <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="javascript:void(0);"
+                                    >&lt;A very long navigation link that goes onto two
+                                    lines&gt;</a
+                                    >
+                                </li>
+                                <li class="usa-nav__submenu-item">
+                                    <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                </li>
+                                </ul>
+                            </div>
+                            <div class="usa-col">
+                                <ul class="usa-nav__submenu-list">
+                                    <li class="usa-nav__submenu-item">
+                                        <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                    </li>
+                                    <li class="usa-nav__submenu-item">
+                                        <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                    </li>
+                                    <li class="usa-nav__submenu-item">
+                                        <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="usa-col">
+                                <ul class="usa-nav__submenu-list">
+                                    <li class="usa-nav__submenu-item">
+                                        <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                    </li>
+                                    <li class="usa-nav__submenu-item">
+                                        <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                    </li>
+                                    <li class="usa-nav__submenu-item">
+                                        <a href="javascript:void(0);">&lt;Navigation link&gt;</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="usa-nav__primary-item">
+                    <a href="javascript:void(0);" class="usa-nav-link">&lt;Simple link&gt;</a>
+                </li>
+            </ul>
+            <section aria-label="Search component">
+                <form class="usa-search usa-search--small" role="search">
+                    <label class="usa-sr-only" for="search-field">Search</label>
+                    <input class="usa-input" id="search-field" type="search" name="search" />
+                    <button class="usa-button" type="submit">
+                        <img src="https://bloomington.in.gov/static/uswds/dist/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+                    </button>
+                </form>
+            </section>
+        </nav>
+    </div>
 </header>
+
 {{ page.primary_menu }}
