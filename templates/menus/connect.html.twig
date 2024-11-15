@@ -2,19 +2,21 @@
  * @copyright 2024 City of Bloomington, Indiana
  * @license http://www.gnu.org/licenses/agpl.txt GNU/AGPL, see LICENSE
  #}
- <div class="collapse multi-collapse z-3 position-absolute" id="collapse_connect" data-bs-parent="#nav-collapses">
-    <div class="card card-body rounded-0">
-        <ul>
-            <li>
-                <a class="fs-5 fw-bold" href="{{ base_path }}contact">Contact</a>
-                <ul>
-                    <li class="m-2"><a href="{{ base_path }}city/showers-city-hall">Visit City Hall</a></li>
-                    <li class="m-2"><a href="{{ base_path }}directory">Staff Directory</a>
-                    <li class="m-2"><a href="{{ base_path }}departments">Departments</a></li>
-                    <li class="m-2"><a href="{{ base_path }}uReport">uReport</a></li>
-                </ul>
-            </li>
-        </ul>
+
+<div id="basic-mega-nav-section-five" class="usa-nav__submenu usa-megamenu">
+    <div class="grid-row grid-gap-4">
+        <div class="usa-col">
+            <ul class="usa-nav__submenu-list">
+                <li class="usa-nav__submenu-item">
+                    <a class="text-bold" href="{{ base_path }}contact">Contact</a>
+                    <ul class="usa-nav__submenu-list margin-left-1">
+                        <li class="usa-nav__submenu-item"><a href="{{ base_path }}city/showers-city-hall">Visit City Hall</a></li>
+                        <li class="usa-nav__submenu-item"><a href="{{ base_path }}directory">Staff Directory</a>
+                        <li class="usa-nav__submenu-item"><a href="{{ base_path }}departments">Departments</a></li>
+                        <li class="usa-nav__submenu-item"><a href="{{ base_path }}uReport">uReport</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
-
